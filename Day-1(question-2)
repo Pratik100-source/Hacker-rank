@@ -1,0 +1,32 @@
+#include<stdio.h>
+
+int main(){
+    
+    int sum =0;
+    int i;
+    int j;
+    int arr[5];
+    int smallest;
+    int largest;
+    
+    printf("");
+    for(i=0;i<5;i++){
+        scanf("%d",&arr[i]);
+        sum+=arr[i];
+    }
+    smallest = largest = arr[0];
+    
+    for(i=0;i<5;i++){
+        if(smallest>arr[i]){
+            smallest=arr[i];
+        }
+        if(largest<arr[i]){
+            largest = arr[i];
+        }
+    }
+    
+    
+printf("%ld %ld\n", sum-largest, sum-smallest);
+// printf("%d \t",sum-5);
+// printf("%d",sum-1);
+}
